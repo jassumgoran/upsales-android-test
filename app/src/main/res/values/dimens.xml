@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="clients_vertical_spacing">20dp</dimen>
+    <dimen name="screen_horizontal_spacing">20dp</dimen>
+    <dimen name="check_oval_padding">4dp</dimen>
+    <dimen name="screen_horizontal_padding">10dp</dimen>
+
+    <dimen name="pager_indicator_size">8dp</dimen>
+    <dimen name="adress_card_pager_padding">40dp</dimen>
+    <dimen name="adress_card_page_margin">20dp</dimen>
+
+    <dimen name="pager_indicator_spacing">4dp</dimen>
+
+    <dimen name="header_view_start_margin_left">16dp</dimen>
+    <dimen name="header_view_end_margin_left">40dp</dimen>
+    <dimen name="header_view_end_margin_right">14dp</dimen>
+    <dimen name="header_view_start_margin_bottom">14dp</dimen>
+
+    <dimen name="collapsible_toolbar_title">18sp</dimen>
+    <dimen name="collapsible_toolbar_subtitle">16sp</dimen>
+    <dimen name="collapsible_toolbar_margin_end">32dp</dimen>
+    <dimen name="collapsible_toolbar_margin_start">@dimen/screen_horizontal_spacing</dimen>
+    <dimen name="collapsible_toolbar_expanded_margin_bottom">40dp</dimen>
+    <dimen name="collapsible_toolbar_subtittle_margin_bottom">10dp</dimen>
+    <dimen name="expanded_appbar_height">150dp</dimen>
+    <dimen name="footer_buttons_padding">15dp</dimen>
+
+
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_static_maps_base_url">https://maps.googleapis.com/maps/api/staticmap?center=:address&amp;key=:key&amp;size=200x200&amp;zoom=14&amp;markers=color:red</string>
+</resources>

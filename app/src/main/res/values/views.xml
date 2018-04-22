@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Company Row -->
+    <color name="company_row_name">@android:color/black</color>
+    <color name="company_row_account_manager">@color/colorUpsalesLightGrey</color>
+
+    <dimen name="company_row_name">16sp</dimen>
+    <dimen name="company_row_account_manager">14sp</dimen>
+    <dimen name="company_row_icon">14sp</dimen>
+    <dimen name="company_row_horizontal_padding">@dimen/screen_horizontal_spacing</dimen>
+    <dimen name="company_row_vertical_padding">10dp</dimen>
+    <dimen name="company_rows_vertical_spacing">0dp</dimen>
+
+    <string name="font_company_row_name">@string/roboto_bold</string>
+    <string name="font_company_row_account_manager">@string/roboto_regular</string>
+
+    <!-- Address Row -->
+    <color name="address_row_label">@android:color/black</color>
+    <color name="address_row_street">@color/colorUpsalesGrey</color>
+    <color name="address_row_city">@color/colorUpsalesGrey</color>
+
+    <dimen name="address_row_label">16sp</dimen>
+    <dimen name="address_row_street">14sp</dimen>
+    <dimen name="address_row_city">14sp</dimen>
+    <dimen name="address_row_map_size">50dp</dimen>
+    <dimen name="address_row_horizontal_padding">@dimen/screen_horizontal_spacing</dimen>
+    <dimen name="address_row_vertical_padding">10dp</dimen>
+
+    <string name="font_address_row_label">@string/roboto_bold</string>
+    <string name="font_address_row_street">@string/roboto_regular</string>
+    <string name="font_address_row_city">@string/roboto_regular</string>
+
+    <!-- Filter Row -->
+    <color name="filter_row_name">@color/colorUpsalesBlue</color>
+    <color name="filter_row_right_label">@color/colorUpsalesBabyBlue</color>
+    <color name="filter_row_arrow_icon">@color/colorUpsalesBabyBlue</color>
+
+    <dimen name="filter_row_name">16sp</dimen>
+    <dimen name="filter_row_right_label">14sp</dimen>
+
+    <!-- User Row -->
+    <color name="user_row_name">@color/colorUpsalesBlue</color>
+    <color name="user_row_street">@color/colorUpsalesLightGrey</color>
+
+    <dimen name="user_row_name">16sp</dimen>
+    <dimen name="user_row_horizontal_padding">@dimen/screen_horizontal_spacing</dimen>
+    <dimen name="user_row_icon_right_margin">10dp</dimen>
+    <dimen name="user_row_vertical_padding">10dp</dimen>
+    <dimen name="user_rows_vertical_spacing">10dp</dimen>
+
+    <string name="font_user_row_name">@string/roboto_black</string>
+    <string name="font_user_row_street">@string/roboto_regular</string>
+
+    
+</resources>

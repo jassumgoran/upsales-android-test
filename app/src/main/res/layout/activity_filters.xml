@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnCancel"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_horizontal_padding">
+
+        <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+            style="@style/FilterHeaderStyle"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/filters"
+            app:typeface="@string/roboto_bold" />
+
+        <LinearLayout
+            android:id="@+id/rowAccountManagers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/filter_row" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        android:id="@+id/btnCancel"
+        android:background="@color/colorUpsalesLightGrey"
+        android:paddingTop="@dimen/footer_buttons_padding"
+        android:paddingBottom="@dimen/footer_buttons_padding"
+        style="@style/CancelButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cancel" />
+
+</RelativeLayout>

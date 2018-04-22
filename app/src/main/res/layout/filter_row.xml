@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        android:id="@+id/txtLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/txtNumber"
+        android:textSize="@dimen/filter_row_name"
+        android:textColor="@color/filter_row_name"
+        android:layout_centerVertical="true"
+        app:typeface="@string/roboto_black"
+        android:text="@string/account_managers"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        android:id="@+id/txtNumber"
+        android:layout_toLeftOf="@+id/imgArrow"
+        android:textSize="@dimen/filter_row_name"
+        android:textColor="@color/filter_row_right_label"
+        android:layout_centerVertical="true"
+        app:typeface="@string/roboto_regular"
+        android:text="@string/any"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <ImageView
+       android:id="@+id/imgArrow"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:lines="1"
+       android:src="@drawable/ic_right_arrow"
+       android:tintMode="src_atop"
+       android:tint="@color/filter_row_arrow_icon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</RelativeLayout>

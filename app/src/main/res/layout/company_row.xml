@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/company_row_vertical_padding"
+    android:paddingTop="@dimen/company_row_vertical_padding"
+    android:paddingLeft="@dimen/company_row_horizontal_padding"
+    android:paddingRight="@dimen/company_row_horizontal_padding">
+
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:text="@string/company"
+
+        app:typeface="@string/font_company_row_name" />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_user_circle"
+            android:textSize="@dimen/company_row_icon"
+            android:layout_gravity="center_vertical"
+            app:typeface="@string/font_awesome_solid" />
+
+        <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+            android:id="@+id/txtAccountManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Account manager name"
+            android:textSize="14sp"
+            app:typeface="@string/font_company_row_account_manager" />
+
+    </LinearLayout>
+
+</LinearLayout>

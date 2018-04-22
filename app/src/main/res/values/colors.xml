@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorUpsalesBlue</color>
+    <color name="colorPrimaryDark">@color/colorUpsalesBlue</color>
+    <color name="colorAccent">@color/colorUpsalesBlue</color>
+
+    <color name="colorUpsalesBlue">#002F65</color>
+    <color name="colorUpsalesBabyBlue">#E4EDF7</color>
+    <color name="colorUpsalesMediumBlue">#3367C0</color>
+    <color name="colorUpsalesGrey">#6B7C93</color>
+    <color name="colorUpsalesLightGrey">#EDF1F5</color>
+    <color name="colorUpsalesBrightBlue">#4A90E2</color>
+    <color name="colorUpsalesTableBorders">#E4EAF0</color>
+    <color name="colorUpsalesBodyBg">#CAD2DD</color>
+
+    <color name="colorPagerIndicator">@color/colorUpsalesBodyBg</color>
+    <color name="colorPagerIndicatorSelected">@color/colorUpsalesBlue</color>
+
+    <color name="colorCollapsibleToolbarTitle">@android:color/white</color>
+    <color name="colorCollapsibleToolbarSubtitle">@color/colorUpsalesBrightBlue</color>
+
+    <color name="screen_companies_background">@color/colorUpsalesTableBorders</color>
+
+
+
+</resources>

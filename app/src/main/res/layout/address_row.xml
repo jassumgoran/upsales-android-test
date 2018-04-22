@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/address_row_vertical_padding"
+    android:paddingLeft="@dimen/address_row_horizontal_padding"
+    android:paddingRight="@dimen/address_row_horizontal_padding"
+    android:paddingTop="@dimen/address_row_vertical_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imgMap"
+        android:orientation="vertical">
+
+        <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/visit_address"
+            android:textColor="@color/address_row_label"
+            android:textSize="@dimen/address_row_label"
+            app:typeface="@string/font_address_row_label" />
+
+        <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+            android:id="@+id/txtStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Street address"
+            android:textColor="@color/address_row_street"
+            android:textSize="@dimen/address_row_street"
+            app:typeface="@string/font_address_row_street" />
+
+        <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 345 City"
+            android:textColor="@color/address_row_city"
+            android:textSize="@dimen/address_row_city"
+            app:typeface="@string/font_address_row_city" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="@dimen/address_row_map_size"
+        android:layout_height="@dimen/address_row_map_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

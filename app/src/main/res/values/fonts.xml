@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="font_awesome_solid">fa-solid-900.ttf</string>
+    <string name="font_awesome_regular">fa-regular-400.ttf</string>
+    <string name="font_awesome_brands">fa-brands-400.ttf</string>
+
+    <string name="roboto_light">Roboto-Light.ttf</string>
+    <string name="roboto_regular">Roboto-Regular.ttf</string>
+    <string name="roboto_italic">Roboto-Italic.ttf</string>
+    <string name="roboto_bold">Roboto-Bold.ttf</string>
+    <string name="roboto_black">Roboto-Black.ttf</string>
+
+    <string name="font_collapsible_toolbar_title">@string/roboto_black</string>
+    <string name="font_collapsible_toolbar_subtitle">@string/roboto_regular</string>
+
+
+
+</resources>

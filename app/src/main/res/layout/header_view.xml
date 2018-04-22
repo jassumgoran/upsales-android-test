@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upsales.com.upsalesandroidtest.ui.views.HeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorUpsalesBlue"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        app:typeface="@string/font_collapsible_toolbar_title"
+        android:id="@+id/header_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/colorCollapsibleToolbarTitle"
+        android:textSize="@dimen/collapsible_toolbar_title"
+        />
+
+    <!-- Subtitle -->
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        app:typeface="@string/font_collapsible_toolbar_subtitle"
+        android:id="@+id/header_view_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textColor="@color/colorCollapsibleToolbarSubtitle"
+        android:textSize="@dimen/collapsible_toolbar_subtitle"
+        />
+
+
+</upsales.com.upsalesandroidtest.ui.views.HeaderView>

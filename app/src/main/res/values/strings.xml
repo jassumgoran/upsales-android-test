@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Upsales Android Test</string>
+    <string name="selected">selected</string>
+    <string name="users">users</string>
+    <string name="show_results">Show results</string>
+    <string name="search">Search</string>
+    <string name="any">Any</string>
+    <string name="account_managers">Account managers</string>
+    <string name="filters">Filters</string>
+    <string name="visit_address">Visit address</string>
+    <string name="close">Close</string>
+    <string name="coordinates_error">Couldn\'t retrieve coordinates for</string>
+    <string name="companies">Companies</string>
+    <string name="company">Company</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

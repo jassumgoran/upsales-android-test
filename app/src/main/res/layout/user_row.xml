@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="@dimen/user_row_vertical_padding"
+    android:paddingBottom="@dimen/user_row_vertical_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imgCheck"
+        android:clickable="false"
+        android:padding="@dimen/check_oval_padding"
+        android:layout_marginRight="@dimen/user_row_icon_right_margin"
+        android:background="@drawable/check_oval_background_selector"
+        android:src="@drawable/ic_check_white_18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        android:id="@+id/txtName"
+        app:typeface="@string/font_user_row_name"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/user_row_name"
+        android:text="Firstname Lastname"
+        android:textColor="@color/user_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

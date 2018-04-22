@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+        android:id="@+id/backView"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/ic_back_filters"
+        android:text="All filters"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorUpsalesBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@+id/backView"
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/screen_horizontal_padding"
+            android:paddingRight="@dimen/screen_horizontal_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+
+                app:typeface="@string/roboto_bold"
+                android:text="Users"
+                style="@style/FilterHeaderStyle" />
+
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="14sp"
+                android:textColorHint="@color/colorUpsalesGrey"
+                android:hint="@string/search"
+                android:drawableLeft="@drawable/ic_search"
+                android:background="@drawable/search_input_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+                android:id="@+id/txtHeaderSelected"
+                app:typeface="@string/roboto_bold"
+                android:text="3 selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UsersListHeaderStyle" />
+            
+            <upsales.com.upsalesandroidtest.ui.views.ExpandableHeightListView
+                android:id="@+id/listViewChecked"
+                android:dividerHeight="@dimen/user_rows_vertical_spacing"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <upsales.com.upsalesandroidtest.ui.views.TypefacedTextView
+                android:id="@+id/txtHeaderUsers"
+                app:typeface="@string/roboto_bold"
+                android:text="5 users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UsersListHeaderStyle" />
+
+            <upsales.com.upsalesandroidtest.ui.views.ExpandableHeightListView
+                android:id="@+id/listViewAll"
+                android:dividerHeight="@dimen/user_rows_vertical_spacing"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<include layout="@layout/filter_footer" />
+    </FrameLayout>
+
+</RelativeLayout>
