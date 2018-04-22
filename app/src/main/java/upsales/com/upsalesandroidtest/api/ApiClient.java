@@ -41,23 +41,20 @@ public class ApiClient {
     private static OkHttpClient getHttpClient(){
         OkHttpClient.Builder httpClient =
                 new OkHttpClient.Builder();
-        httpClient.addInterceptor(new Interceptor() {
-            @Override
-            public okhttp3.Response intercept(Chain chain) throws IOException {
-                Request original = chain.request();
-                HttpUrl originalHttpUrl = original.url();
+        httpClient.addInterceptor(chain -> {
+            Request original = chain.request();
+            HttpUrl originalHttpUrl = original.url();
 
-                HttpUrl url = originalHttpUrl.newBuilder()
-                        .addQueryParameter(KEY_TOKEN, TOKEN)
-                        .build();
+            HttpUrl url = originalHttpUrl.newBuilder()
+                    .addQueryParameter(KEY_TOKEN, TOKEN)
+                    .build();
 
-                // Request customization: add request headers
-                Request.Builder requestBuilder = original.newBuilder()
-                        .url(url);
+            // Request customization: add request headers
+            Request.Builder requestBuilder = original.newBuilder()
+                    .url(url);
 
-                Request request = requestBuilder.build();
-                return chain.proceed(request);
-            }
+            Request request = requestBuilder.build();
+            return chain.proceed(request);
         });
 
         return httpClient.build();

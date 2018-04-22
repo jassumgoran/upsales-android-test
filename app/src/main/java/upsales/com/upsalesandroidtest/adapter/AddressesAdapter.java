@@ -53,12 +53,7 @@ public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.Addr
                 .inflate(R.layout.address_row, parent, false);
 
         AddressViewHolder holder =  new AddressViewHolder(itemView);
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.onItemClick(v, holder.getAdapterPosition());
-            }
-        });
+        itemView.setOnClickListener(v -> listener.onItemClick(v, holder.getAdapterPosition()));
         return holder;
     }
 
