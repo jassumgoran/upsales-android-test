@@ -1,4 +1,4 @@
-package upsales.com.upsalesandroidtest;
+package upsales.com.upsalesandroidtest.ui.listeners;
 
 import android.view.View;
 

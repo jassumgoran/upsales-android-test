@@ -1,30 +1,22 @@
 package upsales.com.upsalesandroidtest.adapter;
 
 import android.content.Context;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.google.android.gms.maps.model.LatLng;
 
 import java.util.HashMap;
 import java.util.List;
 
-import upsales.com.upsalesandroidtest.CustomItemClickListener;
+import upsales.com.upsalesandroidtest.ui.listeners.CustomItemClickListener;
 import upsales.com.upsalesandroidtest.R;
-import upsales.com.upsalesandroidtest.model.Account;
 import upsales.com.upsalesandroidtest.model.Address;
-import upsales.com.upsalesandroidtest.model.User;
-import upsales.com.upsalesandroidtest.tasks.GeocodeAddressTask;
 
 /**
  * Created by Goran on 21.4.2018.

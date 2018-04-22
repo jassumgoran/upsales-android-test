@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import upsales.com.upsalesandroidtest.CustomItemClickListener;
+import upsales.com.upsalesandroidtest.ui.listeners.CustomItemClickListener;
 import upsales.com.upsalesandroidtest.R;
 import upsales.com.upsalesandroidtest.model.Account;
 

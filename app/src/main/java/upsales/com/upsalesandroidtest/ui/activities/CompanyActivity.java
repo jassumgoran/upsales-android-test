@@ -3,16 +3,11 @@ package upsales.com.upsalesandroidtest.ui.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import upsales.com.upsalesandroidtest.CustomItemClickListener;
-import upsales.com.upsalesandroidtest.R;
+import upsales.com.upsalesandroidtest.ui.listeners.CustomItemClickListener;
 import upsales.com.upsalesandroidtest.adapter.AddressesAdapter;
 import upsales.com.upsalesandroidtest.model.Account;
 

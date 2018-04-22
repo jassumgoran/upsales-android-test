@@ -1,5 +1,6 @@
 package upsales.com.upsalesandroidtest.ui.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -86,6 +88,9 @@ public class UsersActivity extends AppCompatActivity implements TextWatcher {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users);
         ButterKnife.bind(this);
+
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(inputSearch.getWindowToken(), 0);
 
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
@@ -242,11 +247,7 @@ public class UsersActivity extends AppCompatActivity implements TextWatcher {
     }
 
     private void sortList(List<User> users){
-        Collections.sort(users, new Comparator<User>(){
-            public int compare(User obj1, User obj2) {
-                return obj1.getName().compareToIgnoreCase(obj2.getName());
-            }
-        });
+        Collections.sort(users, (obj1, obj2) -> obj1.getName().compareToIgnoreCase(obj2.getName()));
     }
 
     private void fetchUsers(){

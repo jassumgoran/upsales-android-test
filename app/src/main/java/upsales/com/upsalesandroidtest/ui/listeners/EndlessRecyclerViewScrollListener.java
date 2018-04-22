@@ -1,4 +1,4 @@
-package upsales.com.upsalesandroidtest;
+package upsales.com.upsalesandroidtest.ui.listeners;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
